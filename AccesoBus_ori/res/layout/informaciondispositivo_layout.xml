@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/fondo">  
+    
+    <LinearLayout
+        android:id="@+id/LinearLayoutData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1"	
+        android:orientation="vertical"
+         style="@style/btn1">
+        
+         <TextView
+	        android:id="@+id/textViewNombreDispositivo1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"	
+	        android:textStyle="bold"
+	        android:textColor="@android:color/white"
+	        android:text="Nombre Dispositivo:" />
+	    
+	    <TextView
+	        android:id="@+id/textViewNombreDispositivo2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"	
+	        android:textColor="@android:color/white" />
+
+	    <TextView
+	        android:id="@+id/textViewIMEI1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"	
+	        android:textColor="@android:color/white"
+	        android:textStyle="bold"
+	        android:text="IMEI: " />
+	    
+	     <TextView
+	        android:id="@+id/textViewIMEI2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"	
+	        android:textColor="@android:color/white"/>
+	    
+	
+	    <TextView
+	        android:id="@+id/textViewMAC1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"	
+	        android:textStyle="bold"
+	        android:textColor="@android:color/white"
+	        android:text="M.A.C.:" />
+	    
+	    <TextView
+	        android:id="@+id/textViewMAC2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"	
+	        android:textColor="@android:color/white" />
+	    
+	    
+	    <TextView
+	        android:id="@+id/textViewDivision1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"	
+	        android:textStyle="bold"
+	        android:textColor="@android:color/white"
+	        android:text="Identificador División:" />
+	    
+	    <TextView
+	        android:id="@+id/textViewDivision2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"	
+	        android:textColor="@android:color/white" />
+	    
+	    
+	    <TextView
+	        android:id="@+id/textViewLocal1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"	
+	        android:textStyle="bold"
+	        android:textColor="@android:color/white"
+	        android:text="Local:" />
+	    
+	    <TextView
+	        android:id="@+id/textViewLocal2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"	
+	        android:textColor="@android:color/white" />
+	    
+
+	</LinearLayout>
+
+ 	<LinearLayout
+        android:id="@+id/LinearLayoutConfig"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.9"
+        android:orientation="horizontal" >
+        
+            
+		<Button
+			android:id="@+id/buttonRegresar"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:textSize="20sp"	
+			android:textStyle= "bold"
+			android:text="Regresar"
+			android:textColor="@android:color/white"
+			android:gravity="center"
+			android:onClick="Regresar"
+			style="@style/btn3"/>	
+    	      
+    </LinearLayout>
+    
+</LinearLayout>

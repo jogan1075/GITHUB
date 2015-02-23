@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fondo"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1"
+        android:background="#00000000"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/camaraConfig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinnerIdioma"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:prompt="@string/selecciones_idioma"
+            android:textColor="#FFFFFF"
+            android:background="#CC0190A6" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutConfig"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.9"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buttonRegresar"
+            style="@style/btn3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:onClick="Regresar"
+            android:text="Regresar"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/fondo">  
+    
+     <LinearLayout
+        android:id="@+id/LinearLayoutData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:orientation="vertical"
+        android:background="#00000000">
+
+        
+         
+         <Button
+             android:id="@+id/buttonSyncInicial"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:textSize="20sp"	
+             android:text="Sincronización Inicial Internet" 
+             android:textColor="@android:color/white"             
+             android:onClick="SincronizacionInicial"
+	         style="@style/btn1"/>
+         
+         
+           <Button
+             android:id="@+id/buttonIntranet"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:textSize="20sp"	
+             android:text="Sincronización Inicial Intranet" 
+             android:textColor="@android:color/white"             
+             android:onClick="SincronizacionInicialIntranet"
+	         style="@style/btn1"/>
+           
+         
+         </LinearLayout>
+         
+         <LinearLayout
+        android:id="@+id/LinearLayoutBarra"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"	
+        android:orientation="vertical"
+        android:background="#00000000">
+         
+         <ProgressBar
+	       android:id="@+id/progressSincronizacion"
+	       style="?android:attr/progressBarStyleHorizontal"
+	       android:layout_width="match_parent"
+	       android:layout_margin="1dip"
+	       android:layout_height="wrap_content"
+	       android:visibility="invisible" />
+
+         <TextView
+             android:id="@+id/textViewSincronizacion"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" 
+             android:textColor="@android:color/black"/>
+         
+         
+
+     </LinearLayout>
+     
+    <LinearLayout
+        android:id="@+id/LinearLayoutConfig"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.9"
+        android:orientation="horizontal" >
+         
+        <Button
+                android:id="@+id/buttonMenuConfigRegresar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20sp"	
+		        android:textStyle= "bold"
+		        android:text="Regresar"
+		        android:textColor="@android:color/white"
+		        android:gravity="center"
+		        android:onClick="Regresar"
+		        style="@style/btn3"/>
+
+    </LinearLayout>
+
+</LinearLayout>

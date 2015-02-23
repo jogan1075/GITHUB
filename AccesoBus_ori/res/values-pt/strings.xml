@@ -1,0 +1,14 @@
+<resources>
+
+    <string name="app_name">Controle de Acesso</string>
+    <string name="selecciones_idioma">Selecione o idioma</string>
+    <string name="menu_settings">configurações</string>
+    <string name="content_description">Conteúdo</string>
+    
+    <string-array name="idioma">
+        <item>Español</item>
+        <item>English</item>
+        <item>Português</item>
+    </string-array>
+    
+</resources>

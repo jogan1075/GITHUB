@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="btn1">     
+        <item name="android:background">@drawable/btn1</item> 
+    </style>
+    <style name="btn2">     
+        <item name="android:background">@drawable/btn2</item> 
+    </style>
+    <style name="btn3">     
+        <item name="android:background">@drawable/btn3</item> 
+    </style>
+    <style name="btn4">     
+        <item name="android:background">@drawable/btn4</item> 
+    </style>
+    <style name="btn5">     
+        <item name="android:background">@drawable/btn5</item> 
+    </style>
+    <style name="btn6">     
+        <item name="android:background">@drawable/btn6</item> 
+    </style>
+    
+    <style name="btn7" parent="@android:style/Widget.Button">
+       <item name="android:textSize">15sp</item>
+       <item name="android:textStyle">bold</item>
+       <item name="android:textColor">#FFFFFF</item>
+       <item name="android:gravity">center</item>
+       <item name="android:shadowColor">#000000</item>
+       <item name="android:shadowDx">1</item>
+       <item name="android:shadowDy">1</item> 
+       <item name="android:shadowRadius">0.6</item>
+       <item name="android:background">@drawable/btnayuda</item>
+       <item name="android:padding">5sp</item>
+       <!-- item name="android:width">30sp</item-->
+   </style>
+  
+</resources>

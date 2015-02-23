@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/fondo">
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1"
+        android:background="#00000000"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/camaraConfig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"	
+	        android:textStyle= "bold"
+	         android:textColor="@android:color/white" />
+
+        <EditText
+            android:id="@+id/editTextPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+        	android:singleLine="true"
+        	android:ems="20"   
+            android:inputType="textPassword" />
+
+        <CheckBox
+            android:id="@+id/mostrarPassConfig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="12sp"
+           style="@style/btn1"/>
+
+        <Button
+            android:id="@+id/buttonIngresar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:onClick="BtnContrasenia"
+            style="@style/btn1"
+          />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutConfig"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.9"
+        android:orientation="horizontal" >
+        
+        <LinearLayout
+            android:id="@+id/LinearLayoutMenuConfig"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical" >
+            
+            <Button
+                android:id="@+id/buttonRegresar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20sp"	
+		        android:textStyle= "bold"
+		        android:text="Regresar"
+		        android:textColor="@android:color/white"
+		        android:gravity="center"
+		        android:onClick="Regresar"
+		        style="@style/btn3"/>
+        
+    	</LinearLayout>
+    
+        <LinearLayout
+            android:id="@+id/LinearLayoutMenuConfigBasica"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical" >
+            
+            <Button
+                android:id="@+id/buttonAvanzado"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20sp"	
+		        android:textStyle= "bold"
+		        android:textColor="@android:color/white"
+		        style="@style/btn3"
+		        android:text="Básica"
+		        android:gravity="center"
+		        android:onClick="Basica"
+		        />
+        
+    	</LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

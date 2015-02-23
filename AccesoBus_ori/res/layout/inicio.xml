@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutMenuarriba"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000000"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutMenuConfigarriba"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/imagenColorVerdeAzulRojo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"/>
+<!--                     android:src="@drawable/verde"  -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/imagenBateria"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/txtbateria"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="0 %"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutMenuIngresoManualarriba"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txtVigilante"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Vigilante:"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txtNombreApellidosGuardia"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutChoferPasajero"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:background="@drawable/fondo"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutPersona"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.55"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutPersonaIngreso"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="#00000000"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/buttonPersonaIngreso1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ingresando2on"
+                    android:gravity="left"
+                    android:onClick="PersonaIngreso"
+                    android:textSize="33sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutPersonaSalida"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="#00000000"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/buttonPersonaSalida"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/saliendo2off"
+                    android:gravity="right"
+                    android:onClick="PersonaSalida"
+                    android:textSize="33sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutVehiculo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.55"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutVehiculoIngreso"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="#00000000"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/buttonVehiculoIngreso"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/entraauto_off"
+                    android:gravity="left|bottom"
+                    android:onClick="VehiculoIngreso"
+                    android:textSize="33sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutVehiculoSalida"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="#00000000"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/buttonVehiculoSalida"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/saleauto_off"
+                    android:gravity="right|bottom"
+                    android:onClick="VehiculoSalida"
+                    android:textSize="33sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutMenu"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutMenuConfig"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/buttonMenuConfig"
+                style="@style/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/config"
+                android:gravity="center"
+                android:onClick="Configurar"
+                android:textColor="@android:color/white"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutMenuCaptura"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                style="@style/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="LecturaCamara"
+                android:src="@drawable/camera" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutMenuCaptura2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:orientation="vertical" >
+
+            <ToggleButton
+                android:id="@+id/imageButton2"
+                style="@style/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/lintoff"
+                android:onClick="flashcamara"
+                android:textOff=""
+                android:textOn="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutMenuIngresoManual"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/buttonMenuIngresoManual"
+                style="@style/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:onClick="IngresarManual"
+                android:text="Ingreso Manual"
+                android:textColor="@android:color/white"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

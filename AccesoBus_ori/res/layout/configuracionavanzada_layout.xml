@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fondo"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1" >
+<LinearLayout
+        android:id="@+id/LinearLayoutData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1"
+        android:background="#00000000"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="BtnConexionWs"
+            android:text="Conexión WS"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="BtnInfoDispAvan"
+            android:text="Información del Dispositivo"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btnSincronizarInicial"
+            android:text="Sincronización Inicial"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="InicioGuardia"
+            android:text="Iniciar Guardia"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button5"
+            style="@style/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btnConfiguracionApp"
+            android:text="Configuración Aplicación"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" 
+           />
+        <Button
+            android:id="@+id/button7"
+            style="@style/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="ConfigIdioma"
+            android:text="Idioma"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" 
+           />
+            <Button
+            android:id="@+id/button6"
+            style="@style/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btnSalirApp"
+            android:text="Salir App"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" 
+           />
+    </LinearLayout>
+        
+    </ScrollView>
+
+    
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutConfig"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.9"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutMenuConfig"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/buttonRegresar"
+                style="@style/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:onClick="Regresar"
+                android:text="Regresar"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutMenuConfigAvanzadol"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/buttonMenuBasica"
+                style="@style/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:onClick="BtnConfigBasica"
+                android:text="Básica"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
