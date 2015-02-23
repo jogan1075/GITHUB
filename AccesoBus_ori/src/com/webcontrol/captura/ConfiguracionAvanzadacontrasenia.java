@@ -31,7 +31,7 @@ public class ConfiguracionAvanzadacontrasenia extends Activity {
 	String Idioma;
 	private HomeKeyLocker mHomeKeyLocker;
 	CheckBox mostrarContrasenia;
-	String ContraseñaMala;
+	String ContraseÃ±aMala;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +44,7 @@ public class ConfiguracionAvanzadacontrasenia extends Activity {
 
 		EdTxtContrasenia = (EditText) findViewById(R.id.editTextPass);
 		
-		//EdTxtContrasenia.setText("Desa1.");
+	
 		
 		Txt1 = (TextView) findViewById(R.id.camaraConfig);
 		BtnIngresar = (Button) findViewById(R.id.buttonIngresar);
@@ -82,14 +82,14 @@ public class ConfiguracionAvanzadacontrasenia extends Activity {
 		}
 
 		if (Idioma.equals("ESPANIOL")) {
-			Textos("Ingrese Contraseña", "Ingresar", "Regresar", "Básica",
-					"Mostrar Contraseña", "Contraseña Inválida");
+			Textos("Ingrese ContraseÃ±a", "Ingresar", "Regresar", "BÃ¡sica",
+					"Mostrar ContraseÃ±a", "ContraseÃ±a InvÃ¡lida");
 		} else if (Idioma.equals("INGLES")) {
 			Textos("Enter Password", "Sign In", "Back", "Basic",
 					"Show Password", "Invalid Password");
 		} else if (Idioma.equals("PORTUGUES")) {
-			Textos("Digite a Senha", "Entrar", "Voltar", "Básico",
-					"Mostrar Senha", "Senha inválida");
+			Textos("Digite a Senha", "Entrar", "Voltar", "BÃ¡sico",
+					"Mostrar Senha", "Senha invÃ¡lida");
 		}
 
 		mHomeKeyLocker = new HomeKeyLocker();
@@ -105,7 +105,7 @@ public class ConfiguracionAvanzadacontrasenia extends Activity {
 		BtnRegresar.setText(TextoRegresar);
 		BtnAvanzado.setText(TextoAvanzado);
 		mostrarContrasenia.setText(mostrarPass);
-		ContraseñaMala = passInvalida;
+		ContraseÃ±aMala = passInvalida;
 	}
 
 	public void Regresar(View v) {
@@ -130,7 +130,7 @@ public class ConfiguracionAvanzadacontrasenia extends Activity {
 			finish();
 			startActivity(i);
 		} else {
-			Toast.makeText(getApplicationContext(), ContraseñaMala,
+			Toast.makeText(getApplicationContext(), ContraseÃ±aMala,
 					Toast.LENGTH_SHORT).show();
 		}
 		
