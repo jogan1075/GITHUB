@@ -97,23 +97,7 @@ public class ConfiguracionAvanzadaWS extends Activity {
 		BtnGuardar = (Button) findViewById(R.id.buttonGuardar);
 		TBAutentificacion = (ToggleButton) findViewById(R.id.togglebuttonAutentificacion);
 		
-//		EdTxtUrl.setText("http://desarrollo.webcontrol.cl/webservice/wsandroid.asmx");
-//		EdTxtUsuario.setText("desarrollo");
-//		EdTxtContrasenia.setText("Desa1.");
-//	
-//		EdTxtUrlIntranet
-//				.setText("http://desarrollo.webcontrol.cl/webservice/wsandroid.asmx");
-//		EdTxtUsuarioIntranet.setText("desarrollo");
-//		EdTxtContraseniaIntranet.setText("Desa1.");
-	
-//		EdTxtUrl.setText("https://app.xstratacopperperu.pe/WSAndroid/ServicioAndroid/WSAndroid.asmx");
-//		EdTxtUsuario.setText("desarrollo");
-//		EdTxtContrasenia.setText("Desa1.");
-//	
-//		EdTxtUrlIntranet
-//				.setText("https://app.xstratacopperperu.pe/WSAndroid/ServicioAndroid/WSAndroid.asmx");
-//		EdTxtUsuarioIntranet.setText("desarrollo");
-//		EdTxtContraseniaIntranet.setText("Desa1.");
+
 
 
 		Cursor CursorIdioma = Manager.CursorIdioma();
@@ -123,19 +107,19 @@ public class ConfiguracionAvanzadaWS extends Activity {
 		}
 
 		if (Idioma.equals("ESPANIOL")) {
-			Textos("AutenticaciÛn WS Activada", "AutenticaciÛn WS Desactivada",
-					"USUARIO WS", "CONTRASE—A WS", "Cancelar", "Guardar",
-					"AutenticaciÛn WS Intranet Activada",
-					"AutenticaciÛn WS Intranet Desactivada",
-					"USUARIO WS INTRANET", "CONTRASE—A WS INTRANET", "URL WS",
+			Textos("Autenticaci√≥n WS Activada", "Autenticaci√≥n WS Desactivada",
+					"USUARIO WS", "CONTRASE√ëA WS", "Cancelar", "Guardar",
+					"Autenticaci√≥n WS Intranet Activada",
+					"Autenticaci√≥n WS Intranet Desactivada",
+					"USUARIO WS INTRANET", "CONTRASE√ëA WS INTRANET", "URL WS",
 					"URL Intranet", "Validando Conexiones...",
-					"Validando Conexiones... \n ConexiÛn Internet Correcta",
-					"Validando Conexiones... \n ConexiÛn Intranet Correcta",
-					"Error de ConexiÛn WS Internet",
-					"Error de ConexiÛn WS Intranet",
+					"Validando Conexiones... \n Conexi√≥n Internet Correcta",
+					"Validando Conexiones... \n Conexi√≥n Intranet Correcta",
+					"Error de Conexi√≥n WS Internet",
+					"Error de Conexi√≥n WS Intranet",
 					"Conexiones WS Internet e Intranet Correctas",
-					"V·lide Las Conexiones de Internet e Intranet",
-					"øDesea Continuar?", "Si", "No");
+					"V√°lide Las Conexiones de Internet e Intranet",
+					"¬øDesea Continuar?", "Si", "No");
 		} else if (Idioma.equals("INGLES")) {
 			Textos("WS Authentication Enabled", "WS Authentication Disabled",
 					"USER WS", "PASSWORD WS", "Cancel", "Save",
@@ -151,19 +135,19 @@ public class ConfiguracionAvanzadaWS extends Activity {
 					"Validate Connections Internet and Intranet",
 					"Do you want to continue ?", "Yes", "No");
 		} else if (Idioma.equals("PORTUGUES")) {
-			Textos("AutenticaÁ„o Ativado", "AutenticaÁ„o Off", "USU¡RIO",
+			Textos("Autentica√ß√£o Ativado", "Autentica√ß√£o Off", "USU√ÅRIO",
 					"SENHA", "Cancelar", "Salvar",
-					"AutenticaÁ„o WS Ativado Intranet",
-					"WS Intranet AutenticaÁ„o Off", "WS INTRANET USU¡RIO",
+					"Autentica√ß√£o WS Ativado Intranet",
+					"WS Intranet Autentica√ß√£o Off", "WS INTRANET USU√ÅRIO",
 					"SENHA WS INTRANET", "WS URL", "URL Intranet",
-					"validando Conexıes...",
-					"validando Conexıes... \nConex„o Internet Direito",
-					"validando Conexıes... \nDireito Connection Intranet",
-					"WS erro de conex„o Internet",
-					"WS erro de conex„o Intranet",
-					"Internet e Intranet Conexıes WS correta",
-					"Validar conexıes de Internet e Intranet",
-					"VocÍ quer continuar?", "Sim", "N„o");
+					"validando Conex√µes...",
+					"validando Conex√µes... \nConex√£o Internet Direito",
+					"validando Conex√µes... \nDireito Connection Intranet",
+					"WS erro de conex√£o Internet",
+					"WS erro de conex√£o Intranet",
+					"Internet e Intranet Conex√µes WS correta",
+					"Validar conex√µes de Internet e Intranet",
+					"Voc√™ quer continuar?", "Sim", "N√£o");
 		}
 
 		if (CursorWs.moveToFirst()) {
@@ -312,8 +296,8 @@ public class ConfiguracionAvanzadaWS extends Activity {
 		}
 		else{
 			AlertDialog alertDialog = new AlertDialog.Builder(this).create();
-			alertDialog.setTitle("Error de ConexiÛn a Internet");
-			alertDialog.setMessage("Revise Su ConexiÛn e Intente Nuevamente");
+			alertDialog.setTitle("Error de Conexi√≥n a Internet");
+			alertDialog.setMessage("Revise Su Conexi√≥n e Intente Nuevamente");
 			alertDialog.setButton("Aceptar", new DialogInterface.OnClickListener() {
 				@Override
 				public void onClick(DialogInterface dialog, int which) {
@@ -371,7 +355,7 @@ public class ConfiguracionAvanzadaWS extends Activity {
 		protected void onPreExecute() {
 			// TODO Auto-generated method stub
 			super.onPreExecute();
-//			_Progress = ProgressDialog.show(context, "Validando ConexiÛn",
+//			_Progress = ProgressDialog.show(context, "Validando Conexi√≥n",
 //					"Un Momento...", true);
 		
 
@@ -446,7 +430,7 @@ public class ConfiguracionAvanzadaWS extends Activity {
 
 				
 				
-				// pDialog.setMessage("Validando ConexiÛn... \nConexion WS Internet Correcta");
+				// pDialog.setMessage("Validando Conexi√≥n... \nConexion WS Internet Correcta");
 				pDialog.setMessage(txtvalidarInternet);
 				Cursor cursorConfig = Manager.CursorConfigApp();
 				if (!cursorConfig.moveToFirst()) {
@@ -555,7 +539,7 @@ public class ConfiguracionAvanzadaWS extends Activity {
 
 				
 				
-				// pDialog.setMessage("Validando ConexiÛn... \nConexion WS Internet Correcta");
+				// pDialog.setMessage("Validando Conexi√≥n... \nConexion WS Internet Correcta");
 				pDialog.setMessage(txtvalidarInternet);
 				Cursor cursorConfig = Manager.CursorConfigApp();
 				if (!cursorConfig.moveToFirst()) {
@@ -653,7 +637,7 @@ public class ConfiguracionAvanzadaWS extends Activity {
 				UsuarioIntranet = EdTxtUsuarioIntranet.getText().toString();
 				ContraseniaIntranet = EdTxtContraseniaIntranet.getText()
 						.toString();
-				// pDialog.setMessage("Validando ConexiÛn... \n Conexion WS Intranet Correcta");
+				// pDialog.setMessage("Validando Conexi√≥n... \n Conexion WS Intranet Correcta");
 
 				if (CursorWSIntranet.moveToFirst()) {
 					Manager.ActualizarConfigWsIntranet(NameSpaceIntranet,
@@ -697,7 +681,7 @@ public class ConfiguracionAvanzadaWS extends Activity {
 		alertDialog.setButton("Ok", new DialogInterface.OnClickListener() {
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
-				// aquÌ puedes aÒadir funciones
+				// aqu√≠ puedes a√±adir funciones
 				// Toast.makeText(getApplicationContext(),
 				// "Comprendido",Toast.LENGTH_SHORT).show();
 			}
@@ -714,7 +698,7 @@ public class ConfiguracionAvanzadaWS extends Activity {
 		alertDialog.setButton("Ok", new DialogInterface.OnClickListener() {
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
-				// aquÌ puedes aÒadir funciones
+				// aqu√≠ puedes a√±adir funciones
 				// Toast.makeText(getApplicationContext(),
 				// "Comprendido",Toast.LENGTH_SHORT).show();
 				Intent i = new Intent(ConfiguracionAvanzadaWS.this,
@@ -796,7 +780,7 @@ public class ConfiguracionAvanzadaWS extends Activity {
 				UsuarioIntranet = EdTxtUsuarioIntranet.getText().toString();
 				ContraseniaIntranet = EdTxtContraseniaIntranet.getText()
 						.toString();
-				// pDialog.setMessage("Validando ConexiÛn... \n Conexion WS Intranet Correcta");
+				// pDialog.setMessage("Validando Conexi√≥n... \n Conexion WS Intranet Correcta");
 				pDialog.setMessage(txtvalidarIntranet);
 				if (CursorWSIntranet.moveToFirst()) {
 					Manager.ActualizarConfigWsIntranet(NameSpaceIntranet,
